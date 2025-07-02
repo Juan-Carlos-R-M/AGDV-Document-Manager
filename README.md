@@ -34,10 +34,10 @@ Desarrollado para **AUTOS GUTIÉRREZ Y DEL VALLE S.A. DE C.V.**
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f9305c8e-54f8-485c-8f5e-89e98c4ee20e" width="400" height="300"/>
-  <img src="https://github.com/user-attachments/assets/80974818-4221-44e6-af63-da5823e9c9f6" width="400"/>
-  <img src="https://github.com/user-attachments/assets/2593a097-d7af-4209-a978-53c306aea95e" width="400"/>
-  <img src="https://github.com/user-attachments/assets/8e02876d-6ff9-40aa-a01f-e5c3540545b2" width="400"/>
-  <img src="https://github.com/user-attachments/assets/6cd6bd3e-d425-4f4c-ab84-14b7d66bc243" width="400"/>
+  <img src="https://github.com/user-attachments/assets/80974818-4221-44e6-af63-da5823e9c9f6" width="400" height="300"/>
+  <img src="https://github.com/user-attachments/assets/2593a097-d7af-4209-a978-53c306aea95e" width="400" height="300"/>
+  <img src="https://github.com/user-attachments/assets/8e02876d-6ff9-40aa-a01f-e5c3540545b2" width="400" height="300"/>
+  <img src="https://github.com/user-attachments/assets/6cd6bd3e-d425-4f4c-ab84-14b7d66bc243" width="400" height="300"/>
 </p>
 
 ---
