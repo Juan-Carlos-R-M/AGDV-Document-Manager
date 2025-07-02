@@ -21,39 +21,30 @@ public class CarController {
 
     private final Gson gson = new Gson();
 
-    @PostMapping(value = "/add", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    public ResponseEntity<String> addCar(@RequestParam("carData") String carJson) {
-        if (carJson == null || carJson.isEmpty()) {
-            return ResponseEntity.badRequest().body("{\"error\":\"carData no puede estar vacío\"}");
-        }
+    @PostMapping("/add")
+    public ResponseEntity<Car> addCar(@RequestBody Car car) {
         try {
-            Car car = gson.fromJson(carJson, Car.class);
             Car added = service.add(car);
-            return ResponseEntity.ok(gson.toJson(added));
-        } catch (JsonSyntaxException e) {
-            return ResponseEntity.badRequest().body("{\"error\":\"formato de datos no válido\"}");
+            return ResponseEntity.ok(added);  // Jackson lo convierte a JSON automáticamente
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("{\"error\":\"ocurrió un error inesperado\"}");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
 
-    @PatchMapping(value = "/update", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    public ResponseEntity<String> updateCar(@RequestParam("carData") String carJson) {
-        if (carJson == null || carJson.isEmpty()) {
-            return ResponseEntity.badRequest().body("{\"error\":\"carData no puede estar vacío\"}");
+
+    @PatchMapping(value = "/update", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Car> updateCar(@RequestBody Car car) {
+        if (car == null) {
+            return ResponseEntity.badRequest().build();
         }
         try {
-            Car car = gson.fromJson(carJson, Car.class);
             service.update(car);
-            return ResponseEntity.ok(gson.toJson(car));
-        } catch (JsonSyntaxException e) {
-            return ResponseEntity.badRequest().body("{\"error\":\"formato de datos no válido\"}");
+            return ResponseEntity.ok(car);
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("{\"error\":\"ocurrió un error inesperado\"}");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
+
 
     @DeleteMapping("/delete/{idCar}")
     public ResponseEntity<String> deleteCar(@PathVariable String idCar) {
