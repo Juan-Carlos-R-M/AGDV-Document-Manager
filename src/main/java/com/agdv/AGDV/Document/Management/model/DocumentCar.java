@@ -1,9 +1,16 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
 
 package com.agdv.AGDV.Document.Management.model;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "document")
+@Document(
+        collection = "document"
+)
 public class DocumentCar {
     @Id
     private String id;
@@ -11,9 +18,9 @@ public class DocumentCar {
     private String date;
     private String file;
     private String name;
-    private  int asset;
+    private int asset;
 
-    public DocumentCar(String id, String carId, String date, String file, String name,int asset) {
+    public DocumentCar(String id, String carId, String date, String file, String name, int asset) {
         this.id = id;
         this.carId = carId;
         this.date = date;
@@ -25,24 +32,48 @@ public class DocumentCar {
     public DocumentCar() {
     }
 
-    // Getters y Setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public String getId() {
+        return this.id;
+    }
 
-    public String getCarId() { return carId; }
-    public void setCarId(String carId) { this.carId = carId; }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public String getDate() { return date; }
-    public void setDate(String date) { this.date = date; }
+    public String getCarId() {
+        return this.carId;
+    }
 
-    public String getFile() { return file; }
-    public void setFile(String file) { this.file = file; }
+    public void setCarId(String carId) {
+        this.carId = carId;
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public String getDate() {
+        return this.date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getFile() {
+        return this.file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getAsset() {
-        return asset;
+        return this.asset;
     }
 
     public void setAsset(int asset) {

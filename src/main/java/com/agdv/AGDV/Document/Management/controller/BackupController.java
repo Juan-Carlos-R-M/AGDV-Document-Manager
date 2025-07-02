@@ -32,7 +32,6 @@ public class BackupController {
     @GetMapping("/download/{id}")
     public ResponseEntity<byte[]> downloadBackup(@PathVariable String id) {
         try {
-          // ← debe recibir un hex string válido
             byte[] fileData = service.downloadBackup(id);
             if (fileData == null || fileData.length == 0) {
                 return ResponseEntity.status(404).build();

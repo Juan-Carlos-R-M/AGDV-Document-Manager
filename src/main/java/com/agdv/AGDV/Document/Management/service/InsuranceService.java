@@ -16,7 +16,10 @@ public class InsuranceService {
     /**
      * Recupera todas las aseguradoras.
      */
-    public List<Insurance> getAllInsurances() {
+    public List<Insurance> getAllInsurers() {
         return repository.findAll();
+    }
+    public List<Insurance> addInsurers(List<Insurance> insurers) {
+        return repository.saveAll(insurers);
     }
 }

@@ -1,0 +1,40 @@
+[{
+  "_id": 1,
+  "name": "Ana Seguros"
+},
+{
+  "_id": 2,
+  "name": "Allianz Mexico"
+},
+{
+  "_id": 3,
+  "name": "Chirey"
+},
+{
+  "_id": 4,
+  "name": "El Aguila"
+},
+{
+  "_id": 5,
+  "name": "Seguros ATLAS"
+},
+{
+  "_id": 6,
+  "name": "Seguros El Potosi"
+},
+{
+  "_id": 7,
+  "name": "Zurich"
+},
+{
+  "_id": 8,
+  "name": "GNP"
+},
+{
+  "_id": 9,
+  "name": "HDI"
+},
+{
+  "_id": 10,
+  "name": "Mapfre"
+}]

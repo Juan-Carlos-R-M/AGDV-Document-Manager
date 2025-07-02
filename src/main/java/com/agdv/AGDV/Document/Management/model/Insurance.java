@@ -1,10 +1,14 @@
 package com.agdv.AGDV.Document.Management.model;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "insurance")
 public class Insurance {
     @Id
+    @JsonProperty("_id")
     private int id;
     private String name;
     

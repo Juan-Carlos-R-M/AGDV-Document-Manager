@@ -30,7 +30,7 @@ public class CarService {
     }
 
     public List<Car> getAll() {
-        return repository.findByAsset(1); // Solo activos
+        return repository.findByAsset(1);
     }
 
     public List<Car> search(String query) {
