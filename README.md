@@ -84,8 +84,8 @@ Para que el sistema funcione correctamente en modo local, es necesario instalar 
 
 Para instalar **AGDV-Document-Manager**, asegúrate de descargar ambos archivos necesarios:
 
-1. 🔧 **AGDV_Main_App.exe** — Instalador
-   <button href="https://drive.google.com/file/d/16QXVNRZi_UVaCxq8RZTPHGUBCLTXTL9Q/view">📦 [Descargar directamente </button>
+1. 🔧 **[AGDV_Main_App.exe — Descargar directamente 📦](https://drive.google.com/file/d/16QXVNRZi_UVaCxq8RZTPHGUBCLTXTL9Q/view)**
+n>
 
 > ⚠️ Se tendra que descomprimir y ejecutar el .exe.
 
