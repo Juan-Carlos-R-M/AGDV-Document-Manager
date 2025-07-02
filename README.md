@@ -1,105 +1,83 @@
-# 🚗 AGDV-Document-Manager
+🚗 AGDV Document Manager
+Sistema de Gestión Documental para Unidades Vehiculares
+Desarrollado para AUTOS GUTIÉRREZ Y DEL VALLE S.A. DE C.V.
 
-Sistema de Gestión Documental para Unidades Vehiculares  
-Desarrollado para **AUTOS GUTIÉRREZ Y DEL VALLE S.A. DE C.V.**
+📄 Descripción
+AGDV Document Manager es una aplicación de escritorio desarrollada en JavaFX, que permite gestionar de forma eficiente la documentación asociada a vehículos. Entre sus principales características se encuentran:
 
----
+📋 Registro y modificación de vehículos
 
-## 📄 Descripción
+🗂️ Subida y visualización de documentos (PDF, imágenes)
 
-**AGDV-Document-Manager** es una aplicación de escritorio desarrollada en **JavaFX**, que permite gestionar de forma eficiente la documentación asociada a vehículos. Sus principales funcionalidades incluyen:
+💾 Respaldo automático en formato ZIP
 
-- Registro y modificación de vehículos.
-- Subida y visualización de documentos (PDFs, imágenes).
-- Respaldo automático de documentos en formato ZIP.
-- Interfaz moderna con navegación fluida.
-- Comunicación con una API REST en Spring Boot y base de datos MongoDB.
+🖥️ Interfaz moderna con navegación fluida
 
----
+🌐 Comunicación con una API REST en Spring Boot y base de datos MongoDB
 
-## ⚙️ Tecnologías utilizadas
+⚙️ Tecnologías utilizadas
+Tecnología	Descripción
+☕ Java 17	Lenguaje principal
+🎨 JavaFX 20+	Interfaz gráfica
+🔗 Retrofit 2	Cliente HTTP para consumir API
+🧩 Spring Boot	Backend REST API
+🗃️ MongoDB	Base de datos NoSQL
+🧬 Gson	Conversión JSON <-> objetos Java
+🛠️ Maven	Gestión de dependencias
+🗂️ Git/GitHub	Control de versiones
 
-- ☕ Java 17  
-- 🎨 JavaFX 20+  
-- 🔗 Retrofit 2 (cliente HTTP para Java)  
-- 🧩 Spring Boot (API backend)  
-- 🗃️ MongoDB (NoSQL)  
-- 🧬 Gson  
-- 🛠️ Maven  
-- 🗂️ Git/GitHub  
+🖼️ Capturas de pantalla
+<p align="center"> <img src="https://github.com/user-attachments/assets/f9305c8e-54f8-485c-8f5e-89e98c4ee20e" width="400" /> <img src="https://github.com/user-attachments/assets/80974818-4221-44e6-af63-da5823e9c9f6" width="400" /> <img src="https://github.com/user-attachments/assets/2593a097-d7af-4209-a978-53c306aea95e" width="400" /> <img src="https://github.com/user-attachments/assets/8e02876d-6ff9-40aa-a01f-e5c3540545b2" width="400" /> <img src="https://github.com/user-attachments/assets/6cd6bd3e-d425-4f4c-ab84-14b7d66bc243" width="400" /> </p>
+🚀 Instalación
+Al iniciar por primera vez, se mostrará una pantalla de configuración para conectar con la API REST.
 
----
+📦 Requisitos previos
+Asegúrate de instalar los siguientes componentes:
 
-## 🖼️ Capturas de pantalla
+✅ Java JDK 17 o superior
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f9305c8e-54f8-485c-8f5e-89e98c4ee20e" width="400" height="300"/>
-  <img src="https://github.com/user-attachments/assets/80974818-4221-44e6-af63-da5823e9c9f6" width="400" height="300"/>
-  <img src="https://github.com/user-attachments/assets/2593a097-d7af-4209-a978-53c306aea95e" width="400" height="300"/>
-  <img src="https://github.com/user-attachments/assets/8e02876d-6ff9-40aa-a01f-e5c3540545b2" width="400" height="300"/>
-  <img src="https://github.com/user-attachments/assets/6cd6bd3e-d425-4f4c-ab84-14b7d66bc243" width="400" height="300"/>
-</p>
+✅ MongoDB
 
----
+✅ Maven
 
-## 🚀 Instalación
+✅ JavaFX SDK (si usas un IDE como IntelliJ o Eclipse)
 
-Al ejecutar por primera vez la aplicación, aparecerá una pantalla de configuración para conectar con la API REST.  
-Para que el sistema funcione correctamente en modo local, es necesario instalar previamente los siguientes componentes:
-
-- Java JDK 17+
-- MongoDB
-- Maven
-- JavaFX SDK (si se ejecuta desde IDE)
-- API REST de AGDV
+✅ API REST de AGDV en ejecución
 
 📷 Pantalla de configuración de conexión a la API:
 
-![Sin título](https://github.com/user-attachments/assets/94748f99-bf7a-4e44-97a5-f1506876a1c6)
 
 
 📷 Instalación de herramientas requeridas:
 
-<img src="https://github.com/user-attachments/assets/3aaead4c-04fb-43fb-94cb-7d25e641468c"/>
+<img src="https://github.com/user-attachments/assets/3aaead4c-04fb-43fb-94cb-7d25e641468c" width="600"/>
+🖥️ Requisitos mínimos del sistema
+Recurso	Requisito mínimo
+🧠 Procesador	4 núcleos (1.5 GHz o superior)
+💾 Memoria RAM	2 GB (recomendado: 3 GB o más)
+💽 Almacenamiento	3 GB libres (app + documentos + respaldos)
+💻 Sistema operativo	Windows 10/11 (64 bits)
+☕ Java	JDK 17 o superior
+🌐 Conexión	Red local o internet para conexión con la API
+📦 Dependencias	JavaFX SDK, MongoDB si se usa localmente
 
----
+⚠️ En equipos con 2 GB de RAM, se recomienda cerrar otras aplicaciones para un mejor rendimiento.
 
-## 🖥️ Requisitos mínimos del sistema
+📥 Descarga
+Archivos necesarios:
+🔧 AGDV_Main_App.exe — Instalador de la aplicación
 
-| Recurso              | Requisito mínimo                             |
-|----------------------|----------------------------------------------|
-| 🧠 Procesador         | CPU de 4 núcleos (1.5 GHz o superior)         |
-| 💾 Memoria RAM        | 2 GB (3 GB recomendados)                     |
-| 💽 Almacenamiento     | 3 GB libres (app + documentos + respaldos)   |
-| 💻 Sistema operativo  | Windows 10/11 (64 bits)    |
-| ☕ Java               | JDK 17 o superior                             |
-| 🌐 Conexión           | Red local o internet para API REST           |
-| 📦 Dependencias       | JavaFX SDK, MongoDB (si se ejecuta localmente) |
+⚠️ Extrae el archivo .zip y ejecuta el .exe manualmente para iniciar la instalación.
 
-> ⚠️ En equipos con 2 GB de RAM, se recomienda cerrar otras aplicaciones para un mejor rendimiento.
+🔧 Requisitos de ejecución
+Verifica tener lo siguiente correctamente configurado:
 
----
+[✔] Java JDK 17 o superior
 
-## 📥 Descarga
+[✔] Maven (para compilar el backend)
 
-Para instalar **AGDV-Document-Manager**, asegúrate de descargar ambos archivos necesarios:
+[✔] JavaFX SDK instalado
 
-1. 🔧 **AGDV_Main_App.exe** — Instalador 
-   📦 [Descargar directamente (https://drive.google.com/file/d/16QXVNRZi_UVaCxq8RZTPHGUBCLTXTL9Q/view)
+[✔] MongoDB en ejecución
 
-> ⚠️ Se tendra que descomprimir y ejecutar el .exe.
-
----
-
-## 🛠️ Requisitos de ejecución
-
-Asegúrate de tener lo siguiente instalado y configurado:
-
-- [✅] JDK 17 o superior  
-- [✅] Maven (para construir el backend)  
-- [✅] JavaFX SDK (si usas un IDE como IntelliJ o Eclipse)  
-- [✅] MongoDB ejecutándose (local o remoto)  
-- [✅] Conexión activa con la API REST del sistema  
-
----
-
+[✔] Conexión con la API REST
