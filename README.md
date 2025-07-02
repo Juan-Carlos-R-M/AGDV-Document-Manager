@@ -38,6 +38,8 @@ Desarrollado para **AUTOS GUTIÉRREZ Y DEL VALLE S.A. DE C.V.**
   <img src="https://github.com/user-attachments/assets/2593a097-d7af-4209-a978-53c306aea95e" width="400" height="300"/>
   <img src="https://github.com/user-attachments/assets/8e02876d-6ff9-40aa-a01f-e5c3540545b2" width="400" height="300"/>
   <img src="https://github.com/user-attachments/assets/6cd6bd3e-d425-4f4c-ab84-14b7d66bc243" width="400" height="300"/>
+ <img src="https://github.com/user-attachments/assets/ac801ae1-e352-4ba2-af89-648aa55a669b" width="400" height="300"/>
+
 </p>
 
 ---
