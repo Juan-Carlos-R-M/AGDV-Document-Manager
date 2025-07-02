@@ -70,7 +70,7 @@ Para que el sistema funcione correctamente en modo local, es necesario instalar 
 | 🧠 Procesador         | CPU de 4 núcleos (1.5 GHz o superior)         |
 | 💾 Memoria RAM        | 2 GB (3 GB recomendados)                     |
 | 💽 Almacenamiento     | 3 GB libres (app + documentos + respaldos)   |
-| 💻 Sistema operativo  | Windows 10/11 (64 bits) o Linux (64 bits)    |
+| 💻 Sistema operativo  | Windows 10/11 (64 bits)    |
 | ☕ Java               | JDK 17 o superior                             |
 | 🌐 Conexión           | Red local o internet para API REST           |
 | 📦 Dependencias       | JavaFX SDK, MongoDB (si se ejecuta localmente) |
