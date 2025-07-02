@@ -44,10 +44,8 @@ Git/GitHub
 Para instalar **AGDV-Document-Manager**, asegúrate de descargar ambos archivos necesarios:
 
 1. 🔧 **AGDV_Main_App.jar** — Aplicación principal (cliente JavaFX)  
-   📦 [Descargar directamente (1MQgjUb3NGe4oQJ_a83OkTbON8uBJwqLc)](https://drive.google.com/uc?export=download&id=1MQgjUb3NGe4oQJ_a83OkTbON8uBJwqLc)
+   📦 [Descargar directamente (1MQgjUb3NGe4oQJ_a83OkTbON8uBJwqLc)]([https://drive.google.com/uc?export=download&id=1MQgjUb3NGe4oQJ_a83OkTbON8uBJwqLc](https://drive.google.com/file/d/16QXVNRZi_UVaCxq8RZTPHGUBCLTXTL9Q/view)
 
-2. 💾 **AGDV_Backend_API.zip** — Backend con API Spring Boot + configuraciones  
-   📦 [Descargar directamente (1QgkSkSc7hQcoGBBY6nq_ZnNMfHUqqlff)](https://drive.google.com/uc?export=download&id=1QgkSkSc7hQcoGBBY6nq_ZnNMfHUqqlff)
 
 > ⚠️ Ambos archivos son necesarios para ejecutar correctamente el sistema. Consulta la sección de instalación para más detalles.
 
