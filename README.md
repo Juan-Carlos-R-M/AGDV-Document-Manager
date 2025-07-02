@@ -55,11 +55,12 @@ Para que el sistema funcione correctamente en modo local, es necesario instalar 
 
 📷 Pantalla de configuración de conexión a la API:
 
-<img src="https://github.com/user-attachments/assets/f2e9b01d-3e7f-4ec2-a1af-6b693a14e475" width="400"/>
+![Sin título](https://github.com/user-attachments/assets/94748f99-bf7a-4e44-97a5-f1506876a1c6)
+
 
 📷 Instalación de herramientas requeridas:
 
-<img src="https://github.com/user-attachments/assets/3aaead4c-04fb-43fb-94cb-7d25e641468c" width="400"/>
+<img src="https://github.com/user-attachments/assets/3aaead4c-04fb-43fb-94cb-7d25e641468c"/>
 
 ---
 
