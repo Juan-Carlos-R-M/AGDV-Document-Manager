@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agdv.controller.BackupsController">
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="Infinity" maxWidth="Infinity" prefWidth="500.0">
+            <VBox alignment="TOP_CENTER" fillWidth="true" maxWidth="Infinity" spacing="20" style="-fx-padding: 20;">
+                <children>
+                    <!-- Barra superior con botón y título -->
+                    <GridPane alignment="CENTER">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" percentWidth="10.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" percentWidth="80.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" percentWidth="10.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+
+                        <!-- Botón regresar -->
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="54.0" style="-fx-background-color: F4F4F4;" textAlignment="CENTER">
+                            <graphic>
+                                <ImageView fitHeight="56.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/go-back.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <!-- Título -->
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="Infinity" style="-fx-font-size: 28px;" styleClass="title" text="Respaldo de Vehículos" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                            <font>
+                                <Font size="54.0" />
+                            </font>
+                        </Label>
+                    </GridPane>
+
+                    <!-- Contenedor de tarjetas -->
+                    <VBox fx:id="backupListContainer" fillWidth="true" maxWidth="Infinity" prefHeight="200.0" />
+                </children>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

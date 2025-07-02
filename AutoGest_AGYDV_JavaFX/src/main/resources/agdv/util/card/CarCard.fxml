@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="120.0" prefWidth="616.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agdv.util.card.CarCard">
+    <children>
+        <HBox maxWidth="1.7976931348623157E308" spacing="20" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-padding: 10px;">
+         <VBox alignment="CENTER" minWidth="150.0">
+            <children>
+                  <!-- Imagen del auto -->
+                  <ImageView fx:id="imageCarImageView" fitHeight="100.0" fitWidth="150.0" preserveRatio="true">
+                      <image>
+                          <Image url="@../../images/car-image.png" />
+                      </image>
+                  </ImageView>
+            </children>
+         </VBox>
+
+            <!-- Datos del auto -->
+            <VBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                <GridPane alignment="CENTER_RIGHT" hgap="20.0" vgap="2.0">
+                    <!-- Definición de columnas -->
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" percentWidth="20.0" /> <!-- Número de Serie -->
+                        <ColumnConstraints halignment="CENTER" percentWidth="20.0" /> <!-- Marca -->
+                        <ColumnConstraints halignment="CENTER" percentWidth="20.0" /> <!-- Modelo -->
+                        <ColumnConstraints halignment="CENTER" percentWidth="20.0" /> <!-- Color -->
+                        <ColumnConstraints halignment="CENTER" percentWidth="20.0" /> <!-- Año -->
+                        <ColumnConstraints halignment="RIGHT" percentWidth="10.0" /> <!-- Acciones -->
+                    </columnConstraints>
+
+                    <!-- Encabezados -->
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="300.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Marca:" GridPane.columnIndex="1">
+                        <padding><Insets left="10.0" right="10.0" /></padding>
+                    </Label>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="300.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Modelo:" GridPane.columnIndex="2">
+                        <padding><Insets left="10.0" right="10.0" /></padding>
+                    </Label>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="300.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Color:" GridPane.columnIndex="3">
+                        <padding><Insets left="10.0" right="10.0" /></padding>
+                    </Label>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="300.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Año:" GridPane.columnIndex="4">
+                        <padding><Insets left="10.0" right="10.0" /></padding>
+                    </Label>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="300.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="No. Serie:" GridPane.columnIndex="0" />
+
+                    <!-- FILA 1 - Datos del auto -->
+                    <Label fx:id="serialNumberLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.rowIndex="2" />
+                    <Label fx:id="brandLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <Label fx:id="modelLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                    <Label fx:id="colorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                    <Label fx:id="yearLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+
+                    <!-- Botón Eliminar -->
+                    <Button fx:id="deleteBtn" contentDisplay="RIGHT" onAction="#carDelete" prefHeight="50.0" prefWidth="300.0" style="-fx-border-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                        <graphic>
+                            <ImageView fitHeight="20" fitWidth="20">
+                                <Image url="@../../images/delete-button.png" />
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Eliminar Auto" />
+                        </tooltip>
+                    </Button>
+               <Button fx:id="editButton" contentDisplay="RIGHT" onAction="#carEdit" prefHeight="50.0" prefWidth="300.0" style="-fx-border-radius: 10px;" GridPane.columnIndex="5">
+                  <graphic>
+                     <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                           <Image url="@../../images/edit-button.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+                  <tooltip>
+                     <Tooltip text="Eliminar Auto" />
+                  </tooltip>
+               </Button>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+            </VBox>
+        </HBox>
+        <Separator />
+    </children>
+
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+</VBox>

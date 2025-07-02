@@ -1,0 +1,216 @@
+/* === ESTILOS GENERALES === */
+.root {
+    -fx-background-color: #ffffff;
+}
+
+.label, .comments-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+/* === CONTENEDORES === */
+.vbox-container, .content {
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #ccc;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 0);
+}
+
+/* === CAMPOS DE ENTRADA === */
+.text-field, .password-field, .search-field, .comments-field, .input-field {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-max-width: 400px;
+    -fx-min-height: 40px;
+    -fx-alignment: center;
+}
+
+.input-text {
+    -fx-background-color: black;
+    -fx-background-radius: 10;
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+}
+
+/* === BOTONES GENERALES === */
+.button, .action-button, .toggle-button {
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.button:hover,
+.menu-button:hover,
+.toggle-button:hover {
+    -fx-background-color: #333333;
+}
+
+/* === BOTONES ESPECÍFICOS === */
+.upload-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 5 20;
+    -fx-border-radius: 5;
+    -fx-font-size: 14px;
+}
+
+.cancel-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-padding: 5 20;
+    -fx-border-radius: 5;
+    -fx-font-size: 14px;
+}
+
+.add-button {
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+/* === BOTONES DE ACCIÓN CON ICONOS === */
+.agregarVehiculo,
+.descargarRespaldo,
+.consultarVehiculo {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.agregarVehiculo {
+    -fx-background-image: url("../images/plus-button.png");
+}
+.agregarVehiculo:hover {
+    -fx-background-image: url("../images/plus-button-white.png");
+}
+
+.descargarRespaldo {
+    -fx-background-image: url("../images/downloads.png");
+}
+.descargarRespaldo:hover {
+    -fx-background-image: url("../images/downloads-white.png");
+}
+
+.consultarVehiculo {
+    -fx-background-image: url("../images/car.png");
+}
+.consultarVehiculo:hover {
+    -fx-background-image: url("../images/car-white.png");
+}
+
+/* === MENÚ === */
+.menu {
+    -fx-background-color: transparent;
+}
+
+.menu-button {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-padding: 5px 10px;
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.menu-button:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+/* === TABLA === */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #000;
+    -fx-border-width: 1;
+}
+
+.table-column {
+    -fx-alignment: center;
+    -fx-border-color: #000;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-row-cell {
+    -fx-background-color: #e0e0e0;
+}
+
+/* === VALIDACIONES === */
+.invalid-field {
+    -fx-background-color: #FFC0CB;
+    -fx-border-color: #FF0000;
+}
+
+.valid-field {
+    -fx-background-color: #c7f9cc;
+    -fx-border-color: #80ed99;
+}
+
+/* === TEXTO Y TÍTULOS === */
+.title, .logo-label, .welcome-label {
+    -fx-font-weight: bold;
+}
+
+.title {
+    -fx-font-size: 24px;
+}
+
+.logo-label {
+    -fx-font-size: 20px;
+}
+
+.welcome-label {
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+}
+
+.titulo {
+    -fx-font-size: 40px;
+    -fx-text-fill: black;
+}
+
+.subtitulo, .subtitle {
+    -fx-font-size: 22px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.texto {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* === COMPONENTES DE CALENDARIO === */
+.calendar {
+    -fx-padding: 10px;
+    -fx-border-width: 1;
+    -fx-border-color: #ccc;
+}
+
+.appointment, .time {
+    -fx-font-size: 16px;
+    -fx-padding: 5px 0;
+}
+
+/* === OTROS === */
+.header {
+    -fx-padding: 10px;
+}
+
+.select {
+    -fx-text-fill: white;
+}
+

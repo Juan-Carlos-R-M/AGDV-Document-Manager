@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="40.0" prefWidth="795.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agdv.util.card.DocumentCard">
+
+    <children>
+        <HBox maxWidth="1.7976931348623157E308" spacing="20" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-padding: 10px;">
+         <Button fx:id="loadImageButton" minHeight="100.0" minWidth="150.0" mnemonicParsing="false" onAction="#loadImage">
+            <graphic>
+                  <!-- Imagen del auto -->
+                  <ImageView fx:id="imageImg" fitHeight="100.0" fitWidth="150.0" preserveRatio="true">
+                      <image>
+                          <Image url="@../../images/archive-white.png" />
+                      </image>
+                  </ImageView>
+            </graphic>
+         </Button>
+
+            <!-- Datos del auto -->
+            <VBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                <GridPane alignment="CENTER_RIGHT" hgap="5.0" vgap="5.0">
+                    <!-- Definición de columnas -->
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" /> <!-- Número de Serie -->
+                        <ColumnConstraints halignment="CENTER" /> <!-- Año -->
+                        <ColumnConstraints halignment="RIGHT" />
+                  <ColumnConstraints halignment="RIGHT" minWidth="10.0" /> <!-- Acciones -->
+                    </columnConstraints>
+
+                    <!-- FILA 1 - Datos del auto -->
+                    <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.rowIndex="2" />
+                    <Label fx:id="dateLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                    <!-- Botón Eliminar -->
+                    <Button fx:id="dowloadButton" contentDisplay="RIGHT" onAction="#downloadImage" prefHeight="20.0" prefWidth="300.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <graphic>
+                            <ImageView fitHeight="20" fitWidth="20">
+                                <Image url="@../../images/downloads-white.png" />
+                            </ImageView>
+                        </graphic>
+                        <tooltip>
+                            <Tooltip text="Eliminar Auto" />
+                        </tooltip>
+                    </Button>
+               <Button fx:id="deleteButton" contentDisplay="RIGHT" onAction="#deleteDocument" prefHeight="20.0" prefWidth="300.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <graphic>
+                     <ImageView fitHeight="20" fitWidth="20">
+                        <image>
+                           <Image url="@../../images/delete-button.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+                  <tooltip>
+                     <Tooltip text="Eliminar Auto" />
+                  </tooltip>
+               </Button>
+               <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Eliminar" GridPane.columnIndex="3">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Descargar" GridPane.columnIndex="2">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Fecha" GridPane.columnIndex="1">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" prefHeight="30.0" prefWidth="500.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Nombre">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+                    <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                </GridPane>
+            </VBox>
+        </HBox>
+        <Separator />
+    </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>

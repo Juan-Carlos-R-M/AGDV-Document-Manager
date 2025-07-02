@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agdv.controller.ConfigureApplication">
+   <center>
+      <HBox fx:id="hbox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT">
+         <children>
+            <SplitPane dividerPositions="0.5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="10000.0" prefWidth="10000.0">
+              <items>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: black;">
+                     <children>
+                        <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logoAutosGutierrezBlanco.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                 <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="700.0" prefHeight="10000.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" style="-fx-font-size: 50;" text="Bienvenidos a AutoGest G&amp;DV" textAlignment="CENTER" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="100.0" left="20.0" right="20.0" />
+                           </VBox.margin>
+                           <effect>
+                              <Blend mode="COLOR_DODGE" />
+                           </effect>
+                        </Label>
+                        <HBox maxWidth="400.0">
+                           <children>
+                              <ToggleButton fx:id="onlineBtn" mnemonicParsing="false" onAction="#onlineAPI" text="API Online" />
+                           </children>
+                        </HBox>
+                        <Label text="Conexión a la API" />
+
+                             <TextField fx:id="adressField" promptText="Conexión URL de la API " text="http://localhost" />
+                        <Label fx:id="portLabel" text="Puerto" />
+                       <TextField fx:id="portField" promptText="Puerto" text="8081" />
+
+                             <HBox maxWidth="400.0">
+                          <children>
+                             <Label text="Instalar las herramientas necesarias para configurar la API" />
+                          </children>
+                       </HBox>
+
+                             <Button fx:id="installBtn" maxWidth="400.0" mnemonicParsing="false" onAction="#installPrograms" text="Instalar" />
+                       <Button fx:id="continueBtn" maxWidth="400.0" mnemonicParsing="false" onAction="#connectDatabase" text="Continuar" />
+                    </children>
+                    <padding>
+                       <Insets left="20.0" right="20.0" />
+                    </padding>
+                 </VBox>
+              </items>
+            </SplitPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

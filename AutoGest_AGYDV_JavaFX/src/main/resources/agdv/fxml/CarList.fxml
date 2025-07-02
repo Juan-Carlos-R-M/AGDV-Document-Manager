@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agdv.controller.CarListController">
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" spacing="20" style="-fx-padding: 20;">
+                <children>
+                    <!-- Barra superior con botón y título -->
+                    <GridPane alignment="CENTER">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="500.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" percentWidth="80.0" prefWidth="444.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="524.0" minWidth="10.0" percentWidth="10.0" prefWidth="444.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+
+                        <!-- Botón regresar -->
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="54.0" style="-fx-background-color: F4F4F4;" textAlignment="CENTER">
+                            <graphic>
+                                <ImageView fitHeight="56.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/go-back.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+
+                        <!-- Título -->
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="2000.0" style="-fx-font-size: 28px;" styleClass="title" text="Autos Disponibles" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true" GridPane.columnIndex="1">
+                            <font>
+                                <Font size="54.0" />
+                            </font>
+                        </Label>
+                    </GridPane>
+
+                    <!-- Campo de búsqueda + Botón de agregar -->
+                    <HBox alignment="CENTER" spacing="10">
+                        <TextField fx:id="searchCarField" promptText="Buscar auto..." styleClass="search-field" HBox.hgrow="ALWAYS" />
+                        <Button onAction="#searchCar" style="-fx-background-color: black;" styleClass="add-button">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/search.png.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button onAction="#addCar" style="-fx-background-color: black;" styleClass="add-button">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/mas-white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                    </HBox>
+
+                    <!-- Contenedor de tarjetas -->
+                    <VBox fx:id="carListContainer" prefHeight="200.0" prefWidth="100.0" />
+                </children>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

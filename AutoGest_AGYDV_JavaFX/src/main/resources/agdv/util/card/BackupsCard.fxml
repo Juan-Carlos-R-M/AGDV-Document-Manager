@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="120.0" prefWidth="616.0" spacing="15" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agdv.util.card.BackupsCard">
+
+    <children>
+        <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="20" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-padding: 10px;">
+             <GridPane alignment="CENTER" hgap="20.0" maxWidth="1.7976931348623157E308" prefWidth="10000.0" vgap="2.0">
+                 <!-- Definición de columnas -->
+                 <columnConstraints>
+                     <ColumnConstraints halignment="CENTER" maxWidth="1.7976931348623157E308" percentWidth="100.0" /> <!-- Nombre -->
+                     <ColumnConstraints halignment="CENTER" maxWidth="1.7976931348623157E308" percentWidth="100.0" /> <!-- Fecha -->
+                     <ColumnConstraints halignment="CENTER" maxWidth="1.7976931348623157E308" percentWidth="100.0" /> <!-- Acciones -->
+                 </columnConstraints>
+      
+                 <!-- Encabezados -->
+                 <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Nombre:" GridPane.columnIndex="0" />
+                 <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Fecha:" GridPane.columnIndex="1" />
+                 <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="30.0" style="-fx-font-weight: bold; -fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 10px;" text="Tamaño:" GridPane.columnIndex="2" />
+
+                 <!-- FILA 1 - Datos del respaldo -->
+                 <Label fx:id="backupNameLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                 <Label fx:id="backupDateLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                 <Label fx:id="backupSizeLabel" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 10px;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+             </GridPane>
+
+              <!-- Botón Descargar -->
+              <Button fx:id="downloadButton" contentDisplay="RIGHT" onAction="#downloadBackup" prefHeight="50.0" prefWidth="200.0" style="-fx-border-radius: 10px;">
+                  <graphic>
+                      <ImageView fitHeight="50.0" fitWidth="50.0">
+                          <image>
+                              <Image url="@../../images/downloads-white.png" />
+                          </image>
+                      </ImageView>
+                  </graphic>
+                  <tooltip>
+                      <Tooltip text="Descargar Respaldo" />
+                  </tooltip>
+              </Button>
+        </HBox>
+        <Separator />
+    </children>
+
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+</VBox>
