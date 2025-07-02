@@ -3,7 +3,7 @@
 Sistema de Gestión Documental para Unidades Vehiculares
 Proyecto desarrollado para AUTOS GUTIÉRREZ Y DEL VALLE S.A. DE C.V.
 
-##📄 Descripción
+## 📄 Descripción
 AGDV-Document-Manager es una aplicación de escritorio desarrollada en JavaFX que permite gestionar los documentos asociados a vehículos, incluyendo:
 
 Registro y modificación de vehículos.
@@ -33,7 +33,7 @@ Maven
 
 Git/GitHub
 
-##🖼️ Capturas de pantalla
+## 🖼️ Capturas de pantalla
 ![{5E40A2F3-586E-4D91-B5F7-DA3439B0CE30}](https://github.com/user-attachments/assets/f9305c8e-54f8-485c-8f5e-89e98c4ee20e)
 ![{E1E5A627-BE5A-4EAA-9FE4-BC6D08FBF23F}](https://github.com/user-attachments/assets/80974818-4221-44e6-af63-da5823e9c9f6)
 ![{AD09D8ED-0632-495B-AE70-7E5D1F7FB0C7}](https://github.com/user-attachments/assets/2593a097-d7af-4209-a978-53c306aea95e)
@@ -41,7 +41,7 @@ Git/GitHub
 ![{70A1F4CE-B3F8-4C72-B510-ABAEE803975A}](https://github.com/user-attachments/assets/6cd6bd3e-d425-4f4c-ab84-14b7d66bc243)
 
 
-##🚀 Instalación
+## 🚀 Instalación
 
 ## 🖥️ Requisitos mínimos del sistema
 
